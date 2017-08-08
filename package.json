@@ -1,0 +1,32 @@
+{
+  "name": "artexts",
+  "version": "1.0.0",
+  "description": "Hold the location of AR Texts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/njligames/ARTexts-server.git"
+  },
+  "keywords": [
+    "ar",
+    "text"
+  ],
+  "author": "James Folk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njligames/ARTexts-server/issues"
+  },
+  "homepage": "https://github.com/njligames/ARTexts-server#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.6"
+  }
+}
