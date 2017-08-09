@@ -13,12 +13,53 @@ var ARTextSchema = new Schema({
     default: "some text"
   },
 
+  sessionId: {
+    type: String
+  },
+
   Created_date: {
     type: Date,
     default: Date.now
-  }
+  },
+
 
 });
 
+var ARSessionSchema = new Schema({
+  latitude: {
+    type: Number
+  },
+
+  longitude: {
+    type: Number
+  },
+
+  altitude: {
+    type: Number
+  },
+
+  horizontalAccuracy: {
+    type: Number
+  },
+
+  verticalAccuracy: {
+    type: Number
+  },
+
+  course: {
+    type: Number
+  },
+
+  speed: {
+    type: Number
+  },
+
+  Created_date: {
+    type: Date,
+    default: Date.now
+  },
+});
+
 module.exports = mongoose.model('ARText', ARTextSchema);
+module.exports = mongoose.model('ARSession', ARSessionSchema);
 
