@@ -54,6 +54,18 @@ var ARSessionSchema = new Schema({
     type: Number
   },
 
+  yaw: {
+    type: Number
+  },
+
+  pitch: {
+    type: Number
+  },
+  
+  roll: {
+    type: Number
+  },
+
   Created_date: {
     type: Date,
     default: Date.now
