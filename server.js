@@ -6,7 +6,12 @@ var express = require('express'),
     bodyParser = require('body-parser');
   
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/Textsdb', {
+
+var uristring = 
+  process.env.MONGODB_URI || 
+    'mongodb://localhost/Textsdb';
+
+mongoose.connect(uristring, {
     useMongoClient: true,
     }); 
 
