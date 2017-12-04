@@ -17,12 +17,23 @@ var ARTextSchema = new Schema({
     type: String
   },
 
+  fontSize: {
+    type: Number
+    default: 32.0
+  },
+  fontColor: {
+    type: String
+    default: "1,0,0,1"
+  },
+  fontName: {
+    type: String
+    default: "Courier-Bold"
+  }
+
   Created_date: {
     type: Date,
     default: Date.now
   },
-
-
 });
 
 var ARSessionSchema = new Schema({
