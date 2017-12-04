@@ -18,15 +18,15 @@ var ARTextSchema = new Schema({
   },
 
   fontSize: {
-    type: Number
+    type: Number,
     default: 32.0
   },
   fontColor: {
-    type: String
+    type: String,
     default: "1,0,0,1"
   },
   fontName: {
-    type: String
+    type: String,
     default: "Courier-Bold"
   }
 
