@@ -28,7 +28,7 @@ var ARTextSchema = new Schema({
   fontName: {
     type: String,
     default: "Courier-Bold"
-  }
+  },
 
   Created_date: {
     type: Date,
